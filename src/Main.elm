@@ -56,7 +56,7 @@ view model =
                     "light-theme"
     in
     div [ class themeClass ]
-        [ h1 [] [ text "Demo Elm App" ]
+        [ h1 [] [ text "Demo" ]
         , div [] [ text "Choose a Theme" ]
         , div []
             [ button [ onClick (ToggleTheme Light) ] [ text "Light" ]
