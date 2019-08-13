@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: elm-rs
+  labels:
+    app: elm-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: elm-demo
+  template:
+    metadata:
+      labels:
+        app: elm-demo
+    spec:
+      containers:
+      - name: elm-demo
+        image: kobonaut/elm-demo:0.1.0
