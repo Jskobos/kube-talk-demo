@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elm-deployment
+  labels:
+    app: elm-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: elm-app
+  template:
+    metadata:
+      labels:
+        app: elm-app
+    spec:
+      containers:
+      - name: elm-app
+        image: kobonaut/elm-demo-app:0.1.0
+        ports:
+        - name: http
+          containerPort: 80

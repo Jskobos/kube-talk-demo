@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: elm-demo-pod
+  labels:
+    app: elm-demo-pod
+spec:
+  containers:
+    - name: elm-demo-pod
+      image: kobonaut/elm-demo-app:0.1.0
