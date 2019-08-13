@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
     - name: elm-demo-pod
-      image: kobonaut/elm-demo-app:0.1.0
+      image: kobonaut/elm-demo:0.1.0
