@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: elm-deployment
+  name: elm-demo
   labels:
-    app: elm-app
+    app: elm-demo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: elm-app
+      app: elm-demo
   template:
     metadata:
       labels:
-        app: elm-app
+        app: elm-demo
     spec:
       containers:
-      - name: elm-app
+      - name: elm-demo
         image: kobonaut/elm-demo:0.1.0
         ports:
         - name: http

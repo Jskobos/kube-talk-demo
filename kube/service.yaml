@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: elm-service
+  name: elm-demo-service
 spec:
   type: LoadBalancer
   selector:
-     app: elm-app
+     app: elm-demo
   ports:
   - protocol: TCP
     port: 80
