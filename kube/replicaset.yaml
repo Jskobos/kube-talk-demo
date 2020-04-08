@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: elm-demo
-        image: kobonaut/elm-demo:0.1.0
+        image: kobonaut/elm-demo:1.0.0
         readinessProbe:
           httpGet:
             path: /
